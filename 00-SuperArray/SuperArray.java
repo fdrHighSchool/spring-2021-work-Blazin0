@@ -15,23 +15,24 @@ public class SuperArray{
   }
 
   public void add(int val){
-    int[] arrayadd1 = new int[arr.length+1];
+    int[] newarray = new int[arr.length+1];
     for(int i =0; i < arr.length-1;i++){
-      arrayadd1[i] = arr[i];
+      newarray[i] = arr[i];
       }
-      arrayadd1[arr.length] = val;
-      this.arr = arrayadd1;
+      newarray[arr.length] = val;
+      this.arr = newarray;
     }
 
   public void add(int index, int val){
-    int[] arrayadd2 = new int[arr.length+1];
+    int[] newarray = new int[arr.length+1];
     for(int i = 0; i < arr.length ; i++){
-      arrayadd2[i] = arr[i];
+      newarray[i] = arr[i];
     }
-    arrayadd2[index-1] = val;
-    this.arr = arrayadd2;
+    newarray[index-1] = val;
+    this.arr = newarray;
   }
   public void grow(int n){
+
 
   }
   public void set(int i, int val){
