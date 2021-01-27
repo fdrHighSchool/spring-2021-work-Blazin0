@@ -13,15 +13,23 @@ public class SuperArray{
   public SuperArray(int s){
     this.arr = new int[s];
   }
+
   public void add(int val){
-    for(int i =0; i <= arr.length-1;i++){
-      if(arr[i] == 0){
-        arr[i] = val;
+    int[] arrayadd1 = new int[arr.length+1];
+    for(int i =0; i < arr.length-1;i++){
+      arrayadd1[i] = arr[i];
       }
+      arrayadd1[arr.length] = val;
+      this.arr = arrayadd1;
     }
-  }
+
   public void add(int index, int val){
-    this.arr[index] = val;
+    int[] arrayadd2 = new int[arr.length+1];
+    for(int i = 0; i < arr.length ; i++){
+      arrayadd2[i] = arr[i];
+    }
+    arrayadd2[index-1] = val;
+    this.arr = arrayadd2;
   }
   public void grow(int n){
 
@@ -38,11 +46,14 @@ public class SuperArray{
        System.out.println("true");
        return true;
      }
+
      System.out.println("false");
      return false;
-  }
+   }
+
   public void remove(int index){
   }
+
   public String toString(){
     System.out.println(Arrays.toString(this.arr));
     return Arrays.toString(this.arr);

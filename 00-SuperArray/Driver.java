@@ -4,12 +4,10 @@ public class Driver{
     SuperArray arr2 = new SuperArray(12);
     SuperArray arr3 = new SuperArray(57);
       arr1.add(1,20);
+      arr2.add(20);
       arr1.toString();
       arr1.isEmpty();
-
-      arr2.add(5);
       arr2.toString();
-
       arr3.isEmpty();
   }
 }
