@@ -1,15 +1,11 @@
 import java.util.*;
 
 public class SuperArray{
-  private boolean bool;
   private int[] arr;
-  private int index;
 
-  // public SuperArray(){
-  //   this.arr = new int[10];
-  //   this.index = 0;
-  //
-  // }
+  public SuperArray(){
+    this.arr = new int[10];
+   }
   public SuperArray(int s){
     this.arr = new int[s];
   }
@@ -32,11 +28,14 @@ public class SuperArray{
     this.arr = newarray;
   }
   public void grow(int n){
-
-
+    int[] newarray = new int[arr.length+n];
+    for (int i =0; i < arr.length;i++){
+      newarray[i] = arr[i];
+    }
+    this.arr = newarray;
   }
   public void set(int i, int val){
-
+    this.arr[i-1] = val;
   }
   public boolean isEmpty(){
     int sum = 0;
