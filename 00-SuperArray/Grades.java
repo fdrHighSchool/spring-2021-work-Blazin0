@@ -16,6 +16,7 @@ public class Grades{
     public String GtoString(){
       return this.grades.toString();
     }
+    
     public void gset(int i,int n){
       this.grades.set(i,n);
     }
