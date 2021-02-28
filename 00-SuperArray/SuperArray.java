@@ -48,6 +48,13 @@ public class SuperArray{
   public String toString(){
     System.out.println(Arrays.toString(this.arr));
     return Arrays.toString(this.arr);
-    
+
+  }
+  //METHODS FOR GRADES
+  public int gint(int i){
+    return arr[i];
+  }
+  public int glength(){
+    return arr.length;
   }
 }
