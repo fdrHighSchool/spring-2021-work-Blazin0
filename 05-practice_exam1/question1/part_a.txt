@@ -1,0 +1,10 @@
+private String recombine(String word1,String word2)
+  int word1length = (int)Math.floor(word1.length()/2);
+  if(word1length % 2 == 0){
+    int word2length = (int)Math.floor(word2.length()/2);
+  }
+  else{
+    int word2length = (int)Math.ceil(word2.length()/2);
+  }
+  String combined = word1.substring(0,word1length) + word2.substring(word1length,word2length);
+  return combined;
