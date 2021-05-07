@@ -1,0 +1,9 @@
+public static int getPeakIndex(int[] array)
+  int x = 0;
+  for(int i = 1; i <= array.length-1;i++){
+    if(x < array[i] && array[i] > array[i-1] && array[i] > array[i+1]){
+      x = array[i];
+      }
+
+  }
+  return -1;
